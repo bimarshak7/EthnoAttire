@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+    @variants responsive {
+        .no-scrollbar {
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
+    }
+}
+@layer base {
+    html {
+        @apply scroll-smooth h-screen w-screen;
+    }
+    body,
+    #root {
+        @apply h-full w-full p-1;
+    }
+}
+.section {
+    @apply bg-gray-200 rounded flex flex-col gap-2  overflow-hidden px-2;
+}
+.section h2 {
+    margin-left: 1vw;
+}
+
+.section p {
+    margin-left: 2vw;
+}
+
+.collapsible .content {
+    padding: 6px;
+    background-color: #eeeeee;
+}
+.collapsible .header {
+    background-color: #dddddd;
+    padding: 6px;
+    cursor: pointer;
+}
