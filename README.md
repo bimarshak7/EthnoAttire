@@ -11,7 +11,7 @@ pip install -r requirements.txt
 ## Run client
 ``` cd client && npm run dev```
 ## Run server
-``` cd server && python index.py```
-
+``` cd server && python index.py```  
+## Demo Video
 https://github.com/bimarshak7/EthnoAttire/assets/59700049/57ecbecd-5697-4e54-803f-1338a6e1b700
 
