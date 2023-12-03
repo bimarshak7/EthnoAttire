@@ -24,7 +24,7 @@ def predictImage():
     print("[*]Detecting Image")
     result = model([Image.open(image)], conf=0.6)[0]
     print("[.]Detection complete")
-
+    print("Result:",result.boxes)
     data = result.boxes.data.cpu().tolist()
     h, w = result.orig_shape
 
@@ -45,7 +45,7 @@ def predictImage():
                 "color": "#%02x%02x%02x" % tuple(colors[classId]),
             }
         )
-
+    # print("Frame: ",r)
     return {"frame": r}
 
 
@@ -116,4 +116,4 @@ def home():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=3000, debug=False)
+    app.run(host="0.0.0.0", port=3000, debug=True)
