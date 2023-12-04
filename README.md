@@ -13,5 +13,6 @@ pip install -r requirements.txt
 ## Run server
 ``` cd server && python index.py```  
 ## Demo Video
-https://github.com/bimarshak7/EthnoAttire/assets/59700049/57ecbecd-5697-4e54-803f-1338a6e1b700
+
+https://github.com/bimarshak7/EthnoAttire/assets/59700049/d990cdd2-1a5f-4438-a90e-948876896ab1
 
